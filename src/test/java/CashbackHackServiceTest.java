@@ -1,5 +1,5 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CashbackHackServiceTest {
 
@@ -8,8 +8,8 @@ public class CashbackHackServiceTest {
 @Test
     public void remain1(){
 
-    int actual = cash.remain(800);
-    int exepted = 200;
+    int actual = cash.remain(700);
+    int exepted = 300;
 
     Assert.assertEquals(actual,exepted);
 }
@@ -17,8 +17,8 @@ public class CashbackHackServiceTest {
     @Test
     public void remain2(){
 
-        int actual = cash.remain(1100);
-        int exepted = 900;
+        int actual = cash.remain(1200);
+        int exepted = 800;
 
         Assert.assertEquals(actual,exepted);
     }
